@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ student.first_name }} {{ student.last_name }} - Result</title>
+</head>
+<body>
+    <h1>{{ student.first_name }} {{ student.last_name }} - Result</h1>
+
+    <ul>
+        {% for entry in entries %}
+            <li>{{ entry.subject.name }}: {{ entry.marks }}</li>
+        {% endfor %}
+    </ul>
+
+    <p>Total Marks: {{ total_marks }}</p>
+    <p>Percentage: {{ percentage }}%</p>
+     <p>Grade: {{ grade }}</p>
+
+
+</body>
+</html>
+
